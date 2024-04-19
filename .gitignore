@@ -679,3 +679,4 @@ pyrightconfig.json
 
 Software
 Temporary/**/*
+*.bbl-SAVE-ERROR
