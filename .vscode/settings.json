@@ -5,10 +5,16 @@
         "epigenicity",
         "Epitope",
         "epitopes",
+        "HIVDRMDB",
         "icore",
+        "integrase",
         "isin",
         "itable",
+        "LANL",
+        "Matplotlib",
+        "Seaborn",
         "tqdm",
+        "transcriptase",
         "unmutated"
     ]
 }
