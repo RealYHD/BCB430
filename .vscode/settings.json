@@ -1,20 +1,34 @@
 {
     "cSpell.words": [
         "antigenicities",
+        "cbaas",
+        "dropna",
         "epigenicities",
         "epigenicity",
         "Epitope",
         "epitopes",
+        "epitopic",
+        "fillna",
         "HIVDRMDB",
         "icore",
+        "iemdrm",
+        "iloc",
+        "immunogenicity",
+        "INSTI",
         "integrase",
         "isin",
         "itable",
+        "itables",
         "LANL",
         "Matplotlib",
+        "NNRTI",
+        "NRTI",
+        "Pharmacokinetic",
         "Seaborn",
         "tqdm",
         "transcriptase",
         "unmutated"
-    ]
+    ],
+    "files.autoSave": "afterDelay",
+    "editor.formatOnSave": true
 }
