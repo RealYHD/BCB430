@@ -1,8 +1,12 @@
-\documentclass{report}
+\documentclass{article}
 \usepackage[style=numeric-comp]{biblatex}
 \usepackage{acro}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{array}
 
-\addbibresource{../main.bib}
+\addbibresource{../library.bib}
+\graphicspath{{./images/}}
 \title{Drug Resistance Mutations Affect on HLA Binding in HIV-1 Epitopes}
 \author{Harrison Deng}
 \date{\today}
@@ -20,6 +24,6 @@
 
 
 
-\printacronyms[heading=chapter]
+\printacronyms[heading=section]
 \printbibliography[heading=bibintoc] % TODO Figure out how to add numbering
 \end{document}

@@ -1,0 +1,61 @@
+\begin{table}[h]
+    \centering % TODO decide if this is the right command.
+    \begin{tabular}{||c|c||m{8em}|c|c||}
+        \hline
+        \textbf{HLA Allele}  & HLA-B07:02 & \textbf{2-Way Table}          & \textbf{SB} & \textbf{NB} \\
+        \hline
+        \textbf{Drug Target} & Integrase  & \textbf{$\alpha$ \& $\beta$*} & 2           & 0           \\
+        \hline
+        \textbf{P-Value}     & 0.00026    & \textbf{No \acp{drm}}         & 2           & 209         \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{||c|c||m{8em}|c|c||}
+        \hline
+        \textbf{HLA Allele}  & HLA-B07:02 & \textbf{2-Way Table}               & \textbf{SB} & \textbf{NB} \\
+        \hline
+        \textbf{Drug Target} & Integrase  & \textbf{$\alpha$ \& $\beta$$\dag$} & 2           & 1           \\
+        \hline
+        \textbf{P-Value}     & 0.00078    & \textbf{No \acp{drm}}              & 2           & 209         \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{||c|c||m{8em}|c|c||}
+        \hline
+        \textbf{HLA Allele}  & HLA-B15:01 & \textbf{2-Way Table}  & \textbf{SB} & \textbf{NB} \\
+        \hline
+        \textbf{Drug Target} & Integrase  & \textbf{E92Q \& Q95K} & 3           & 8           \\
+        \hline
+        \textbf{P-Value}     & 0.00080    & \textbf{No \acp{drm}} & 2           & 215         \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{||c|c||m{8em}|c|c||}
+        \hline
+        \textbf{HLA Allele}  & HLA-B15:01 & \textbf{2-Way Table}  & \textbf{SB} & \textbf{NB} \\
+        \hline
+        \textbf{Drug Target} & Integrase  & \textbf{E92Q}         & 3           & 9           \\
+        \hline
+        \textbf{P-Value}     & 0.00104    & \textbf{No \acp{drm}} & 2           & 215         \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{||c|c||m{8em}|c|c||}
+        \hline
+        \textbf{HLA Allele}  & HLA-B07:02 & \textbf{2-Way Table}  & \textbf{SB} & \textbf{NB} \\
+        \hline
+        \textbf{Drug Target} & Protease   & \textbf{N88T \& V82M} & 2           & 0           \\
+        \hline
+        \textbf{P-Value}     & 0.00111    & \textbf{No \acp{drm}} & 1           & 71          \\
+        \hline
+    \end{tabular}
+
+    \medskip
+
+    \begin{tabular}{||m{0.8\textwidth}||}
+        \hline
+        \textbf{*}: $\alpha$ and $\beta$ may be of any of the following combinations (6): (Q\textbf{146}P, Q\textbf{148}R) (Q148H, Y143K), (Q148H, Y143R), (Q148K, Y143R), (Q148N, Y143R), (Q148R, Y143R) \\
+        \hline
+        \hline
+        $\dag$: $\alpha$ and $\beta$ may be of any of the following combinations (4): (Q146P, Y143H), (Q146P, Y143K), (Q146P, Y143R), (S\textbf{147}G, Y143R)                                             \\
+        \hline
+    \end{tabular}
+    \caption{The top 13 most statistically significant associations between a given set of mutations existing in all unique variations of epitopes, with a change of \acl{pelrank} such that the categorical binding strength changes from strong binding (SB) to no binding (NB), or vice versa. Note that due to some of the associations having the same 2-way table, with the same properties other than the mutations, they were condensed to save space.}
+    \label{table:mutation_association_with_binding}
+\end{table}

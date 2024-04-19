@@ -1,0 +1,63 @@
+\begin{table}[h]
+    \centering
+
+    Drug Target: Integrase
+
+    \smallskip
+
+    \begin{tabular}{||c|c|c||c|c|c|c|c||}
+        \hline
+        HLA    & Mutation Set & Binding & BIC & CAB & DTG & EVG & RAL \\
+        \hline
+        \hline
+        B07:02 & Q146P, Q148R & SB, NB  & 25  & 70  & 25  & 120 & 60  \\
+        \hline
+        B07:02 & Q148H, Y143K & SB, NB  & 30  & 40  & 30  & 70  & 120 \\
+        \hline
+        B07:02 & Q148H, Y143R & SB, NB  & 30  & 40  & 30  & 70  & 120 \\
+        \hline
+        B07:02 & Q148K, Y143R & SB, NB  & 35  & 60  & 35  & 70  & 120 \\
+        \hline
+        B07:02 & Q148N, Y143R & SB, NB  & 5   & 25  & 5   & 25  & 75  \\
+        \hline
+        B07:02 & Q148R, Y143R & SB, NB  & 30  & 50  & 30  & 70  & 120 \\
+        \hline
+        B07:02 & Q146P, Y143H & SB, NB  & 5   & 40  & 5   & 70  & 60  \\
+        \hline
+        B07:02 & Q146P, Y143K & SB, NB  & 5   & 40  & 5   & 70  & 60  \\
+        \hline
+        B07:02 & Q146P, Y143R & SB, NB  & 5   & 40  & 5   & 70  & 60  \\
+        \hline
+        B07:02 & Q146G, Y143R & SB, NB  & 15  & 20  & 15  & 70  & 70  \\
+        \hline
+        B15:01 & E92Q, Q95K   & SB, NB  & 15  & 20  & 15  & 70  & 70  \\
+        \hline
+        B15:01 & E92Q         & SB, NB  & 10  & 15  & 10  & 60  & 30  \\
+        \hline
+    \end{tabular}
+
+    \medskip
+
+    Drug Target: Protease
+
+    \smallskip
+
+    \begin{tabular}{||c|c|c||c|c|c|c|c|c|c||}
+        \hline
+        HLA    & Mutation Set & Binding & ATV/r & DRV/r & LPV/r & FPV/r \\
+        \hline
+        \hline
+        B07:02 & Q146P, Q148R & SB, NB  & 25    & 0     & 25    & 15    \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{|c|c|c||c|c|c|c|c|c|c|c|c||}
+        \hline
+        HLA    & Mutation Set & Binding & IDV/r & NFV & SQV/r & TPV/r \\
+        \hline
+        \hline
+        B07:02 & Q146P, Q148R & SB, NB  & 30    & 60  & 15    & 10    \\
+        \hline
+    \end{tabular}
+    \caption{Drug resistance scores according to the \acl{hivdrmdb} corresponding to the top 13 most significant results. Both mutation set column and binding columns correspond to their respective information in table \ref{table:mutation_association_with_binding}. Where SB indicates strong binding, and NB indicates a lack of binding. Note that the Protease table has been broken into two lines.}
+    \label{table:significantly_associated_mutation_drm_scores}
+\end{table}

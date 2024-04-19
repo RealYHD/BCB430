@@ -1,19 +1,15 @@
-\begin{table}
+\begin{table}[h]
     \centering % TODO decide if this is the right command.
     \begin{tabular}{||c|c||}
         \hline
         Resistance Category & \Ac{drm} Score (Inclusive) \\
         \hline
         \hline
-        No drug resistance & 0 to 9 \\
+        Strong Binding & Less than 0.5 \\
         \hline
-        Potential low-level drug resistance & 10 to 14 \\
+        Weak Binding & Less than 2, greater than or equal to 0.5 \\
         \hline
-        Low-level drug resistance & 15 to 29 \\
-        \hline
-        Intermediate resistance & 30 to 59 \\
-        \hline
-        High-level resistance & 60 and above \\
+        No Binding & Other \\
         \hline
     \end{tabular}
     \caption{The categorical levels of HLA binding based on the percentile rank predicted by NetMHCPan 4.1 where both the metric and the thresholds were advised by the original paper and authors of the software \cite{reynissonNetMHCpan4NetMHCIIpan4Improved2020}.}

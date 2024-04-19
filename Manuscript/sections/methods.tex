@@ -1,10 +1,12 @@
-\chapter{Materials \& Methods}
-\section{Materials}
+\section{Materials \& Methods}
+
+\subsection{Materials}
+
 Analysis of the interplay between \acp{drm}, and IEMs were performed upon datasets upon the \ac{lahivdb} and the \ac{hivdrmdb}. NetMHCPan version 4.1 and an in-house python script were used in combination for accommodating large data throughput \cite{reynissonNetMHCpan4NetMHCIIpan4Improved2020}. Within the Python script, SciPy and Pandas data processing libraries were used for the analysis \cite{2020SciPy-NMeth,the_pandas_development_team_2024_10957263}. Figures were generated with use of Matplotlib and Seaborn \cite{hunterMatplotlib2DGraphics2007,Waskom2021}.
 
 The \ac{lahivdb} dataset of known \ac{hiv1} \ac{ctl} epitopes including the peptide sequence and position relative to the gene. Datasets were individually downloaded by querying for integrase, p24, protease, and \ac{rt} while all other search parameters were left as the most broad casting option i.e., selecting the "ALL" option when present. The \ac{hivdrmdb} amongst other tools, and other datasets, contains a scoring mechanism for known drug resistance inducing mutations in the \ac{hiv1} genome \cite{rheeHIV1TransmittedDrug2020}. Spreadsheets of such scoring for the different drugs with respect to a given single mutation were downloaded. NetMHCPan version 4.1 was used to predict binding against different \ac{hla1} alleles \cite{reynissonNetMHCpan4NetMHCIIpan4Improved2020}. Data ingress and egress, manipulation and vectorized operations were performed by Pandas and the SciPy library was used for statistical associations \cite{the_pandas_development_team_2024_10957263,2020SciPy-NMeth}. Lastly, Seaborn was used for the automated generation and regression figures by making use of Matplotlib \cite{Waskom2021,hunterMatplotlib2DGraphics2007}.
 
-\section{Methods}
+\subsection{Methods}
 
 All aforementioned datasets were imported from respective \ac{csv} sheets downloaded from their respective databases. This was then followed by the generation of new epitopes based off the set of known epitopes, and the set of drug resistant mutations. All epitopes, natural or generated were then run through NetMHCPan 4.1 to predict their binding level towards various \ac{hla1} alleles. Such binding levels were fit into categories. Hypothetical epitopes were generated from the \acp{naepi}. All generated epitopes were cleaned and filtered to increase the number of interpretable natural epitopes and reduce reduce computation time respectively before running the dataset in NetMHCPan \cite{reynissonNetMHCpan4NetMHCIIpan4Improved2020}. \Acp{drm} and their associated resistance scores were summed in accordance to the guidelines of the \ac{hivdrmdb}. The resistance scores and \ac{drm} scores were then categorized according to their respective guidelines from \ac{hivdrmdb}. Association between the presence of \acp{drm} and the binding level with various \ac{hla1} alleles were tested and p-values were aggregated.
 
@@ -20,4 +22,4 @@ Then, the produced aggregate of both \acp{naepi} and the generated epitopes had 
 
 Lastly, all combinations between all sets of \acp{drm}, and the empty set of \acp{drm}, i.e., the lack of \acp{drm}, were tested for association with all different levels of binding, that is to say, these combinations of \acp{drm} were tested against the occurrences of weak, strong, and no binding level epitopes. The Fisher's exact test was used due to the relatively small sample count of epitopes with the same set of \acp{drm} with unique epitopes. This process generated a list of different p-values for each possible combination. This list of p-values was then filtered by a $\alpha=0.05$.
 
-Resulting tables were generated via Pandas and resulting figures were generated with Seaborn and Matplotlib \cite{the_pandas_development_team_2024_10957263,Waskom2021,hunterMatplotlib2DGraphics2007}.
+Resulting tables were generated via Pandas and resulting figures were generated with Seaborn and Matplotlib \cite{the_pandas_development_team_2024_10957263,Waskom2021,hunterMatplotlib2DGraphics2007}. Further post-analysis filtering and selection of datasets were also performed by these libraries.

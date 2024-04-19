@@ -30,5 +30,6 @@
         "unmutated"
     ],
     "files.autoSave": "afterDelay",
-    "editor.formatOnSave": true
+    "editor.formatOnSave": true,
+    "libraryFilePath": "library.bib"
 }
