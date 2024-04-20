@@ -1,5 +1,6 @@
-\documentclass{article}
+\documentclass[11pt, letterpaper]{article}
 \usepackage[style=numeric-comp]{biblatex}
+\usepackage[margin=1in]{geometry}
 \usepackage{acro}
 \usepackage{graphicx}
 \usepackage{tabularx}
@@ -15,15 +16,22 @@
 
 \begin{document}
 \maketitle
+
+\begin{abstract}
+    This study makes use of the \acl{hiv1} epitope dataset from \acl{lahivdb} and the \acl{drm} scores from \acl{hivdrmdb} to interrogate the intersection between such \acsp{drm}, and the \acl{hla1} mediated, epitope suppressing immune escape mechanism. To elaborate, this study, on top of the \aclp{naepi}, generates all possible permutations of the epitopes by introducing the previously mentioned \aclp{drm} when possible. The generated set of epitopes is ensured to be unique and run through NetMHCPan \cite{reynissonNetMHCpan4NetMHCIIpan4Improved2020} against several common \acl{hla1} alleles to predict the immunogenicity of all epitopes. Then, \acl{drm} scores are calculated for each of the epitopes. The drug resistance and immunogenicity values are then categorized into different levels of drug resistance and binding respectively. Associative statistics on the number of times a specific set of mutations occur, and the resulting \acl{hla1} binding levels are calculated amongst other forms of analysis. Our results indicate amongst \acl{insti} drugs, several \aclp{drm} results in strong binding towards HLA-B*15:01, and HLA-B*07:02. Similarly, for the \acl{pi} drug class, several \aclp{drm} were also determined to have an increased binding towards HLA-B*07:02 and thus, introduce a fitness burden to \acl{hiv1} when selecting for such mutations.
+\end{abstract}
+
+\newpage
 \tableofcontents
 
 \include{sections/introduction}
 \include{sections/methods}
 \include{sections/results}
 \include{sections/discussion}
+\include{sections/limitations}
 
-
-
+\newpage
 \printacronyms[heading=section]
-\printbibliography[heading=bibintoc] % TODO Figure out how to add numbering
+\newpage
+\printbibliography[heading=bibnumbered]
 \end{document}

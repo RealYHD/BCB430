@@ -25,11 +25,18 @@
         "NRTI",
         "Pharmacokinetic",
         "Seaborn",
+        "silico",
         "tqdm",
         "transcriptase",
         "unmutated"
     ],
     "files.autoSave": "afterDelay",
     "editor.formatOnSave": true,
-    "libraryFilePath": "library.bib"
+    "libraryFilePath": "library.bib",
+    "grammarly.selectors": [
+        {
+            "language": "latex",
+            "scheme": "file"
+        }
+    ]
 }

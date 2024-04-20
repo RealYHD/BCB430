@@ -1,14 +1,14 @@
 \section{Results}
 
-Overall, a total of 390,816 unique epitopes were used for the following interpretation and analysis. From these 390,816 epitopes, 202,740 unique sets of epitopic \acp{drm} were generated. 
+Overall, a total of 390,816 unique epitopes were used for the following interpretation and analysis. From these 390,816 epitopes, 202,740 unique sets of epitopic \acp{drm} were generated.
 
 \subsection{Comparing Distribution of Binding Strength}
 
-Figure \ref{fig:overall_hist_axs} is a histogram where the vertical axis is the proportion of all \ac{drm} generated epitopes binned based on \ac{pelrank} with 50 bins resulting in every 2 percentiles being encapsulated in one bin. The \ac{naepi} and their \ac{pelrank} are overlaid in orange with identical binning parameters. See that by table \ref{table:elrankpercentile_categorizations}, the first bin contains all binding values. Such a figure indicates over all \acp{drm} generated unique epitopes, there is shift of portion of epitopes towards being non-binding towards \ac{hla1}. Furthermore, see the substantial drop in binding epitopes in contrast with the \ac{naepi}.
+Figure \ref{fig:overall_hist_axs} is a histogram where the vertical axis is the proportion of all \ac{drm} generated epitopes binned based on \ac{pelrank} with 50 bins resulting in every 2 percentiles being encapsulated in one bin. The \ac{naepi} and their \ac{pelrank} are overlaid in orange with identical binning parameters. See that by table \ref{table:elrankpercentile_categorizations}, the first bin contains all binding values. Such a figure indicates over all \acp{drm} generated unique epitopes, there is a shift of a portion of epitopes towards being non-binding towards \ac{hla1}. Furthermore, see the substantial drop in binding epitopes in contrast with the \ac{naepi}.
 
 \input{figures/overall_hist_axs.tex}
 
-However, filtering out results to include only generated epitopes with a maximum of 2 \acp{drm}, the histogram becomes figure \ref{fig:overall_hist_axs_capped}. Figure \ref{fig:overall_hist_axs_capped}, in contrast with figure \ref{fig:overall_hist_axs}, produces a histogram where the distribution of \ac{drm} generated epitopes is much more similar to the distribution of the \ac{naepi}.
+However, filtering out results to include only generated epitopes with a maximum of 2 \acp{drm}, the maximum number of \acp{drm} that occurred within the set of \acp{naepi} for any given \acp{naepi}, the histogram becomes figure \ref{fig:overall_hist_axs_capped}. Figure \ref{fig:overall_hist_axs_capped}, in contrast with figure \ref{fig:overall_hist_axs}, produces a histogram where the distribution of \ac{drm} generated epitopes is much more similar to the distribution of the \ac{naepi}.
 
 \input{figures/overall_hist_axs_capped.tex}
 
@@ -17,7 +17,7 @@ Note in both figures \ref{fig:overall_hist_axs} and \ref{fig:overall_hist_axs_ca
 
 \subsection{Binding of Original Epitopes vs. Generated Epitopes}
 
-Despite the lack of any obvious relation between \acp{drm}, when the data is stratified by drug class, and then stratified further by the \ac{hla1} allele, we can see that some \ac{hla1} variants for some drug classes do show a non 1:1 association between the \ac{drm} generated epitope, and the corresponding \ac{naepi}. This can be seen in figure \ref{fig:pairplot_binding_mut_orig} where some \ac{hla1} alleles do not grow in a 1:1 fashion. Namely, HLA-B07:02 (blue), and HLA-A24:02 both seem to have a few points of deviation from the standard 1:1 relation seen in the others. Furthermore, see that HLA-B07:02, amongst others, overall has many more epitopes within weak binding percentiles in contrast with many others.
+Despite the lack of any obvious relation between \acp{drm}, when the data is stratified by drug class, and then stratified further by the \ac{hla1} allele, we can see that some \ac{hla1} variants for some drug classes do show a non 1:1 association between the \ac{drm} generated epitope, and the corresponding \ac{naepi}. This can be seen in figure \ref{fig:pairplot_binding_mut_orig} where some \ac{hla1} alleles do not grow in a 1:1 fashion. Namely, aside from the \ac{kde} plots that mostly seem to be a line with a slope of one, there are quite a few where the mutated version has a greater distribution in the direction of higher \ac{pelrank} when compared to the original. However, there are also a few groupings that result in the distribution shifting towards a lower rank, and thus, higher binding strength.
 
 \input{figures/pairplot_binding_mut_orig.tex}
 
@@ -25,8 +25,8 @@ Despite the lack of any obvious relation between \acp{drm}, when the data is str
 
 \input{tables/mutation_association_with_binding.tex}
 
-With regards to statistics and mutation set association results, we will look at the top 13 most significant results that contain dramatic binding changes, i.e., binding changes that go from no binding, to strong binding, or vice versa. Table \ref{table:mutation_association_with_binding} indicates the counts of sets of mutations occurring in relation to different binding strengths. Of note, see that of the top 13 most significant associations with dramatic changes in binding level, 11 results indicate a form of binding with \ac{hla1} variant \acs{hla1}-B07:02. Furthermore, of these results, all indicate that the insertion of such mutations result in an increase in binding where previously, there may have not been any form of binding, these mutations introduce strong binding with \ac{hla1}.
+With regards to statistics and mutation set association results, we will look at the top 13 most significant results that contain dramatic binding changes, i.e., binding changes that go from no binding to strong binding, or vice versa. Table \ref{table:mutation_association_with_binding} indicates the counts of sets of mutations occurring in relation to different binding strengths. Of note, see that of the top 13 most significant associations with dramatic changes in binding level, 11 results indicate a form of binding with \ac{hla1} variant \acs{hla1}-B07:02. Furthermore, of these results, all indicate that the insertion of such mutations result in an increase in binding where previously, there may have not been any form of binding, these mutations introduce strong binding with \ac{hla1}.
 
 \input{tables/significantly_associated_mutation_drm_scores.tex}
 
-Furthermore, see that for each result mutation set (table \ref{table:significantly_associated_mutation_drm_scores}), the score of these sets cumulatively, have at least one drug of the respective class that is considered strongly drug resistant.
+Furthermore, see that for each result mutation set (table \ref{table:significantly_associated_mutation_drm_scores}), the score of these sets cumulatively, has at least one drug of the respective class that is considered strongly drug resistant.
